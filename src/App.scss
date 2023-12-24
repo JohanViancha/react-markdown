@@ -1,0 +1,18 @@
+@import './scss/mixin';
+
+.box {
+  padding: 2rem;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+
+  @include laptop() {
+    height: auto;
+    gap: 1rem;
+    width: 100vw;
+  }
+
+}

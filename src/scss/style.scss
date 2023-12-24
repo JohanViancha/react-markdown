@@ -1,0 +1,88 @@
+@import 'variables';
+
+table {
+  background-color: $alternative-color;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+table td,
+table th {
+  border: 1px solid $primary-color;
+  padding: 2px 8px;
+}
+table tbody td {
+  font-size: $medium-size;
+}
+table tr:nth-child(even) {
+  background: $last-color;
+}
+table thead {
+  background: $primary-color;
+}
+table thead th {
+  font-size: $large-size;
+  font-weight: bold;
+  color: $light-color;
+  text-align: center;
+}
+
+img {
+  width: 30%;
+}
+
+p{
+  white-space:pre-line;
+}
+
+h1,
+h2,
+h3 {
+  border-bottom: 1px solid $secondary-color;
+  padding-bottom: 0.3rem;
+}
+
+blockquote{
+  margin: 0px;
+  border-radius: 0.5rem;
+  border-left: 0.4rem solid $primary-color;
+  padding-left: 1.4rem;
+}
+
+code{
+  background-color: $alternative-color;
+  color: $primary-color;
+}
+
+a{
+  color: $primary-color;
+  font-weight: bold;
+  text-decoration:underline;
+}
+
+a:hover{
+  color: $secondary-color;
+}
+
+pre {
+  background-color: $alternative-color;
+  color: $primary-color;
+  border-radius: 0.5rem 0.5rem 0 0;
+  box-sizing: border-box;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  code::before {
+    content: 'code \A';
+    border-radius: 0.5rem 0.5rem 0 0 ;
+    white-space: pre;
+    padding: 0.2rem 0.3rem;
+    background-color: $primary-color;
+    color: $last-color;
+    display: block;
+  }
+}
+
+
+
+
+

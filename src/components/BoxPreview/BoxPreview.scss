@@ -1,0 +1,25 @@
+@import '../../scss/variables';
+@import '../../scss/mixin';
+
+.preview {
+  color: $primary-color;
+  padding: 0.5rem;
+  height: 94vh;
+  overflow-y: auto;
+  border-radius: 0.5rem 0.5rem 0 0;
+  width: 50%;
+  box-sizing: border-box;
+  border: 1px solid $primary-color;
+  @include laptop() {
+    width: 100%;
+  }
+
+}
+
+.preview::-webkit-scrollbar {
+  @include desing-scroll;
+}
+
+.preview::-webkit-scrollbar-thumb {
+  @include desing-scroll-thumb;
+}

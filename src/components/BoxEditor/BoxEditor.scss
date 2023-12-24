@@ -1,0 +1,41 @@
+@import '../../scss/variables';
+@import '../../scss/mixin';
+
+.box-editor {
+  width: 50%;
+  box-sizing: border-box;
+  @include laptop() {
+    width: 100%;
+  }
+
+  & .box-editor__header {
+    padding: 0.6rem;
+    background-color: $primary-color;
+    color: $light-color;
+    border-radius: 0.5rem 0.5rem 0 0;
+    font-weight: bold;
+  }
+
+  & .box-editor__body {
+    background-color: $alternative-color;
+    border: 0.3rem solid $primary-color;
+    padding: 0.6rem;
+  }
+
+  & .editor {
+    background-color: transparent;
+    border: 0;
+    resize: none;
+    outline: none;
+    width: 100%;
+    height: 85vh;
+  }
+
+  & .editor::-webkit-scrollbar {
+    @include desing-scroll;
+  }
+
+  & .editor::-webkit-scrollbar-thumb {
+    @include desing-scroll-thumb;
+  }
+}
